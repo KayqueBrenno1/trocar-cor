@@ -52,6 +52,7 @@
         const b = Math.floor(Math.random() * 256)
 
         const corFinal = `rgb(${r}, ${g}, ${b})`
+        document.body.style.backgroundImage = 'none'
         document.documentElement.style.setProperty('--color-bg', corFinal)
     }
 
