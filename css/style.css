@@ -50,24 +50,40 @@ button {
 
 #botao-cor-aleatoria {
     color: white;
-    border: 2px solid black;
-    animation: rgb 5s infinite linear;
+    border: 2px solid black; /* Cria uma borda preta de 2 pixels ao redor do botão */
+    animation: rgb 5s infinite linear; /* Aplica a animação chamada "rgb"
+       - dura 5 segundos
+       - repete infinitamente
+       - muda as cores de forma linear (sem aceleração) */
 }
 
-/* Animação RGB */
+/* Define a animação chamada "rgb" */
 @keyframes rgb {
-    0% {
-        background-color: red;
+
+    
+    0% { /* No início da animação (0%) */
+        
+        background-color: red; /* O fundo começa na cor vermelha */
     }
-    33% {
-        background-color: green;
+
+    
+    33% { /* Com 33% do tempo da animação */
+        
+        background-color: green; /* O fundo muda para verde */
     }
-    66% {
-        background-color: blue;
+
+    
+    66% { /* Com 66% do tempo da animação */
+        
+        background-color: blue; /* O fundo muda para azul */
     }
-    100% {
-        background-color: red;
+
+    
+    100% { /* No final da animação (100%) */
+        
+        background-color: red; /* Volta para vermelho, fechando o ciclo */ 
     }
 }
+
 
 
