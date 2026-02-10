@@ -3,6 +3,8 @@
 
 //Criação de variável
 const botaoTrocarCor = document.getElementById('botao-trocar-cor')
+const botaoVerde = document.getElementById('botao-verde')
+const botaoVermelho = document.getElementById('botao-vermelho')
 
 //Função para trocar a cor de fundo
 function trocarCor() {
@@ -23,4 +25,14 @@ function trocarCor() {
 
 }
 
+function trocarCorVerde() {
+    document.documentElement.style.setProperty('--color-bg', 'green')
+}
+
+function trocarCorVermelho() {
+    document.documentElement.style.setProperty('--color-bg', 'red')
+}
+
 botaoTrocarCor.addEventListener('click', trocarCor)
+botaoVerde.addEventListener('click', trocarCorVerde)
+botaoVermelho.addEventListener('click', trocarCorVermelho)
