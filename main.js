@@ -11,6 +11,7 @@ function trocarCor() {
     //Pega a cor informada pelo usuário
     const corUsuario = document.getElementById('cor-usuario').value
 
+    //Trocar cores em português
     if (corUsuario == 'marrom') {
         document.documentElement.style.setProperty('--color-bg', 'brown')
     } else if (corUsuario == 'lilas' || corUsuario == 'lilás') {
