@@ -10,6 +10,9 @@ body {
     align-items: center;
     gap: 16px;
     background-color: var(--color-bg);
+    background-size: cover; /* Faz a imagem de fundo ocupar todo o espaço do elemento, sem distorcer, cortando o excesso se necessário */
+    background-position: center; /* Centraliza a imagem de fundo tanto na horizontal quanto na vertical */
+    background-repeat: no-repeat; /* Impede que a imagem se repita (evita o efeito de mosaico) */
 }
 
 img{
