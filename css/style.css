@@ -1,3 +1,7 @@
+:root {
+    --color-bg: lightblue;
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -5,4 +9,5 @@ body{
     justify-content: center;
     align-items: center;
     gap: 16px;
+    background-color: var(--color-bg);
 }
