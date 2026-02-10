@@ -12,6 +12,11 @@ body {
     background-color: var(--color-bg);
 }
 
+img{
+    width: 300px;
+    height: 200px;
+}
+
 input[type="text"] {
     background-color: #fafafa;
     border: rgb(40, 38, 38) solid;
