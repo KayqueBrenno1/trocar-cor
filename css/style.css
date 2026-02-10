@@ -2,7 +2,7 @@
     --color-bg: lightblue;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -10,4 +10,31 @@ body{
     align-items: center;
     gap: 16px;
     background-color: var(--color-bg);
+}
+
+input[type="text"] {
+    background-color: #fafafa;
+    border: rgb(40, 38, 38) solid;
+    border-radius: 6px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+
+button {
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+#botao-verde {
+    background-color: lightgreen;
+    color: green;
+    border-color: darkgreen;
+}
+
+#botao-vermelho {
+    background-color: pink;
+    color: red;
+    border-color: darkred;
 }
