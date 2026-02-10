@@ -5,6 +5,7 @@
     const botaoTrocarCor = document.getElementById('botao-trocar-cor')
     const botaoVerde = document.getElementById('botao-verde')
     const botaoVermelho = document.getElementById('botao-vermelho')
+    const botaoCorAleatoria = document.getElementById('botao-cor-aleatoria')
     const urlDaImagem = './img/dragon-ball.jpg'
 
     //Função para trocar a cor de fundo
@@ -45,6 +46,17 @@
         document.documentElement.style.setProperty('--color-bg', 'red')
     }
 
+    function trocarCorAleatoria(){
+        const r = Math.floor(Math.random() * 256)
+        const g = Math.floor(Math.random() * 256)
+        const b = Math.floor(Math.random() * 256)
+
+        const corFinal = `rgb(${r}, ${g}, ${b})`
+        document.documentElement.style.setProperty('--color-bg', corFinal)
+    }
+
     botaoTrocarCor.addEventListener('click', trocarCor)
     botaoVerde.addEventListener('click', trocarCorVerde)
     botaoVermelho.addEventListener('click', trocarCorVermelho)
+    botaoCorAleatoria.addEventListener('click', trocarCorAleatoria)
+    
